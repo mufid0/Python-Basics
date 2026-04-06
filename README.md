@@ -72,17 +72,16 @@ print("Hello, Python!")
 
 # Variables
 name = "Mufid"
-age = 21
-height = 5.9
+age = 19
 
 # Using f-string for formatted output
-print(f"My name is {name}, I am {age} years old, and my height is {height} feet.")
+print(f"My name is {name}, I am {age} years old")
 ```
 
 **Output:**
 
 ```text
-My name is Mufid, I am 21 years old, and my height is 5.9 feet.
+My name is Mufid, I am 21 years old.
 ```
 
 ---
