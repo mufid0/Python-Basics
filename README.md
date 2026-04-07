@@ -28,15 +28,15 @@
 
    <details>
    <summary>Click to expand OOP Sections</summary>
-   - [Classes and Objects](#classes-and-objects)  
-   - [Attributes and Methods](#attributes-and-methods)  
-   - [Multiple Instances](#multiple-instances)  
-   - [Inheritance](#inheritance)  
-     - [Single Inheritance](#single-inheritance)  
-     - [Multiple Inheritance](#multiple-inheritance)  
-   - [Super Function](#super-function)  
-   - [Polymorphism](#polymorphism)  
-     - [Method Overriding](#method-overriding)  
+   - [Classes and Objects]  
+   - [Attributes and Methods]  
+   - [Multiple Instances]  
+   - [Inheritance]  
+     - [Single Inheritance]  
+     - [Multiple Inheritance]  
+   - [Super Function]  
+   - [Polymorphism]  
+     - [Method Overriding]  
    </details>
 5. [Conclusion](#conclusion)
 
