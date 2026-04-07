@@ -2,8 +2,6 @@
 
 # ![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge) Python Learning Repository
 
-![GitHub Repo Size](https://img.shields.io/github/repo-size/yourusername/python-learning?style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-
 > A **comprehensive Python learning repository** covering fundamentals, functional programming, OOP, and a **real-world calculator project**.
 
 ---
