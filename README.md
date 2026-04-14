@@ -150,7 +150,7 @@ A **command-line calculator application** demonstrating real-world usage of Pyth
 
 ---
 
-# 🧮 Project: Calculator
+# 🧮 Project: Advanced Calculator (High-Performance CLI)
 
 ## ✨ Features
 
@@ -169,47 +169,124 @@ A **command-line calculator application** demonstrating real-world usage of Pyth
 ## 💻 Implementation
 
 ```python
-def add(a, b):
-    return a + b
-
-def subtract(a, b):
-    return a - b
-
-def multiply(a, b):
-    return a * b
-
-def divide(a, b):
-    if b == 0:
-        return "Cannot divide by zero"
-    return a / b
+import math
+from datetime import datetime
 
 
-while True:
-    print("\nCalculator Menu")
-    print("1. Add")
-    print("2. Subtract")
-    print("3. Multiply")
-    print("4. Divide")
-    print("5. Exit")
+class Calculator:
+    def __init__(self):
+        self.history = []
 
-    choice = input("Enter choice: ")
+    def add(self, a, b):
+        return a + b
 
-    if choice == '5':
-        break
+    def subtract(self, a, b):
+        return a - b
 
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
+    def multiply(self, a, b):
+        return a * b
 
-    if choice == '1':
-        print("Result:", add(num1, num2))
-    elif choice == '2':
-        print("Result:", subtract(num1, num2))
-    elif choice == '3':
-        print("Result:", multiply(num1, num2))
-    elif choice == '4':
-        print("Result:", divide(num1, num2))
-    else:
-        print("Invalid choice")
+    def divide(self, a, b):
+        if b == 0:
+            raise ValueError("Cannot divide by zero")
+        return a / b
+
+    def power(self, a, b):
+        return a ** b
+
+    def sqrt(self, a):
+        if a < 0:
+            raise ValueError("Cannot take sqrt of negative number")
+        return math.sqrt(a)
+
+    def modulus(self, a, b):
+        return a % b
+
+    def evaluate_expression(self, expr):
+        try:
+            result = eval(expr)
+            return result
+        except Exception:
+            raise ValueError("Invalid expression")
+
+    def save_history(self, expression, result):
+        timestamp = datetime.now().strftime("%H:%M:%S")
+        self.history.append(f"[{timestamp}] {expression} = {result}")
+
+    def show_history(self):
+        if not self.history:
+            print("No history yet.")
+        else:
+            print("\n📜 Calculation History:")
+            for item in self.history:
+                print(item)
+
+
+def main():
+    calc = Calculator()
+
+    while True:
+        print("\n====== Advanced Calculator ======")
+        print("1. Add")
+        print("2. Subtract")
+        print("3. Multiply")
+        print("4. Divide")
+        print("5. Power")
+        print("6. Square Root")
+        print("7. Modulus")
+        print("8. Evaluate Expression")
+        print("9. Show History")
+        print("0. Exit")
+
+        choice = input("Enter choice: ")
+
+        try:
+            if choice == '0':
+                print("Exiting Calculator...")
+                break
+
+            elif choice == '8':
+                expr = input("Enter expression (e.g., 2+3*5): ")
+                result = calc.evaluate_expression(expr)
+                calc.save_history(expr, result)
+                print("Result:", result)
+
+            elif choice == '9':
+                calc.show_history()
+
+            elif choice in ['1', '2', '3', '4', '5', '7']:
+                a = float(input("Enter first number: "))
+                b = float(input("Enter second number: "))
+
+                operations = {
+                    '1': calc.add,
+                    '2': calc.subtract,
+                    '3': calc.multiply,
+                    '4': calc.divide,
+                    '5': calc.power,
+                    '7': calc.modulus
+                }
+
+                result = operations[choice](a, b)
+                calc.save_history(f"{a} op {b}", result)
+                print("Result:", result)
+
+            elif choice == '6':
+                a = float(input("Enter number: "))
+                result = calc.sqrt(a)
+                calc.save_history(f"sqrt({a})", result)
+                print("Result:", result)
+
+            else:
+                print("Invalid choice")
+
+        except Exception as e:
+            print("Error:", e)
+
+
+if __name__ == "__main__":
+    main()
+
 ```
 
 ---
