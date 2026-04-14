@@ -1,102 +1,172 @@
----
+# 🐍 Python Fundamentals, Functional Programming & OOP
 
-# ![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge) Python Learning Repository
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge)
+![Repo Size](https://img.shields.io/github/repo-size/yourusername/python-fundamentals?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-![GitHub Repo Size](https://img.shields.io/github/repo-size/yourusername/python-learning?style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-
-> A **comprehensive Python learning repository** covering fundamentals, functional programming, OOP, and a **real-world calculator project**.
-
----
-
-## 📌 Table of Contents
-
-1. [Introduction](#introduction)
-2. [Basic Python Coding](#basic-python-coding)
-3. [Functions in Python](#functions-in-python)
-4. [Object-Oriented Programming (OOP)](#object-oriented-programming-oop)
-5. [Calculator Project](#calculator-project)
-6. [Conclusion](#conclusion)
+> A **comprehensive and structured Python learning repository** designed to build strong programming fundamentals, master functional programming, and understand object-oriented design — with a **real-world project implementation**.
 
 ---
 
-## Introduction
+# 📌 Table of Contents
 
-Python is a **beginner-friendly, powerful programming language** used in web development, AI, automation, and more.
+* [📁 Repository Structure](#-repository-structure)
+* [📚 Modules Overview](#-modules-overview)
+* [🧠 Concepts Covered](#-concepts-covered)
+* [🧮 Project: Calculator](#-project-calculator)
+* [⚙️ Setup & Usage](#️-setup--usage)
+* [📈 Learning Outcomes](#-learning-outcomes)
+* [🚀 Future Enhancements](#-future-enhancements)
+* [🤝 Contribution](#-contribution)
 
 ---
 
-## Basic Python Coding
+# 📁 Repository Structure
 
-### Variables & Printing
-
-```python
-name = "Mufid"
-print(f"Hello {name}")
+```
+python-fundamentals/
+│
+├── 📂 01_python_basics/
+│   ├── basics_part1.ipynb
+│   ├── basics_part2.ipynb
+│   └── README.md
+│
+├── 📂 02_functions/
+│   ├── lambda_map_filter.ipynb
+│   └── README.md
+│
+├── 📂 03_oop/
+│   ├── polymorphism.ipynb
+│   └── README.md
+│
+├── 📂 04_projects/
+│   ├── calculator.py
+│   └── README.md
+│
+├── 📂 assets/              # Images / diagrams (optional)
+│
+├── requirements.txt       # Dependencies (optional)
+└── README.md
 ```
 
 ---
 
-## Functions in Python
-
-### Lambda Example
-
-```python
-square = lambda x: x*x
-print(square(5))
-```
+# 📚 Modules Overview
 
 ---
 
-## Object-Oriented Programming (OOP)
+## 🔹 01. Python Basics
+
+This module builds the **foundation of Python programming**.
+
+### 📘 Topics Covered
+
+* Variables & Data Types
+* Input / Output Handling
+* Conditional Statements (`if-else`)
+* Loops (`for`, `while`)
+* Data Structures:
+
+  * Lists
+  * Tuples
+  * Sets
+  * Dictionaries
+
+### 🎯 Goal
+
+Understand syntax and logic building for problem-solving.
+
+---
+
+## 🔹 02. Functions & Functional Programming
+
+Focuses on writing **clean, reusable, and optimized code**.
+
+### 📘 Topics Covered
+
+* Function Definition & Scope
+* Lambda Functions
+* Higher-Order Functions
+* `map()` and `filter()` usage
+
+### 💡 Example
+
+```python
+square = lambda x: x * x
+print(list(map(square, [1, 2, 3, 4])))
+```
+
+### 🎯 Goal
+
+Adopt functional programming techniques for efficient coding.
+
+---
+
+## 🔹 03. Object-Oriented Programming (OOP)
+
+Introduces **modular and scalable code design**.
 
 <details>
-<summary>Click to expand OOP Concepts</summary>
+<summary>📘 Click to expand detailed concepts</summary>
 
-### Class Example
+### 🔸 Classes & Objects
 
-```python
-class Person:
-    def __init__(self, name):
-        self.name = name
-```
+Blueprints for creating reusable code structures.
 
-### Inheritance
+### 🔸 Inheritance
 
-```python
-class Student(Person):
-    pass
-```
+Promotes code reusability by deriving new classes.
 
-### Polymorphism
+### 🔸 Polymorphism
+
+Same method behaving differently based on object.
 
 ```python
-class Dog:
+class Animal:
+    def sound(self):
+        pass
+
+class Dog(Animal):
     def sound(self):
         return "Bark"
+
+class Cat(Animal):
+    def sound(self):
+        return "Meow"
 ```
 
 </details>
 
----
+### 🎯 Goal
 
-# 🧮 Calculator Project
-
-This repository also includes a **basic calculator project**, which demonstrates real-world application of Python concepts.
+Write structured, reusable, and scalable programs.
 
 ---
 
-## 📌 Features
+## 🔹 04. Project: Calculator 🧮
 
-* Addition
-* Subtraction
-* Multiplication
-* Division
-* User input handling
-* Loop-based continuous execution
+A **command-line calculator application** demonstrating real-world usage of Python fundamentals.
 
 ---
 
-## 💻 Calculator Code
+# 🧮 Project: Calculator
+
+## ✨ Features
+
+* Basic arithmetic operations:
+
+  * Addition
+  * Subtraction
+  * Multiplication
+  * Division
+* Continuous execution using loops
+* Input validation
+* Error handling (division by zero)
+
+---
+
+## 💻 Implementation
 
 ```python
 def add(a, b):
@@ -144,33 +214,80 @@ while True:
 
 ---
 
-## 📊 Concepts Used
+# 🧠 Concepts Covered
 
-| Concept        | Usage                                     |
-| -------------- | ----------------------------------------- |
-| Functions      | Separate operations (add, subtract, etc.) |
-| Conditionals   | Menu selection                            |
-| Loops          | Continuous execution                      |
-| Error Handling | Division by zero                          |
-| User Input     | Interactive CLI                           |
+| Category         | Concepts                           |
+| ---------------- | ---------------------------------- |
+| Core Python      | Variables, Data Types, Loops       |
+| Functional       | Lambda, map, filter                |
+| OOP              | Classes, Inheritance, Polymorphism |
+| Problem Solving  | Logic building                     |
+| Project Building | CLI application                    |
 
 ---
 
-## 🚀 How to Run
+# ⚙️ Setup & Usage
+
+## 🔧 Prerequisites
+
+* Python 3.8+
+
+## ▶️ Run Locally
 
 ```bash
-python calculator.py
+git clone https://github.com/yourusername/python-fundamentals.git
+cd python-fundamentals
+```
+
+### Run Calculator
+
+```bash
+python 04_projects/calculator.py
+```
+
+### Run Notebooks
+
+```bash
+jupyter notebook
 ```
 
 ---
 
-## ✅ Conclusion
+# 📈 Learning Outcomes
 
-This repository covers:
+After completing this repository, you will:
 
-✔ Python Basics
-✔ Functions (Lambda, Map, Filter)
-✔ OOP Concepts
-✔ Real-world Project (Calculator)
+✔ Build strong Python fundamentals
+✔ Write clean and reusable functions
+✔ Understand OOP concepts deeply
+✔ Apply knowledge to real-world projects
+✔ Be prepared for coding interviews & AI/ML learning
+
+---
+
+# 🚀 Future Enhancements
+
+* 🔹 Add File Handling module
+* 🔹 Add NumPy & Pandas notebooks
+* 🔹 Add Data Structures & Algorithms
+* 🔹 Add Mini AI/ML Projects
+* 🔹 Add GUI-based calculator
+
+---
+
+# 🤝 Contribution
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Submit a Pull Request
+
+---
+
+# ⭐ Support
+
+If you find this repository helpful, consider giving it a ⭐ on GitHub!
 
 ---
