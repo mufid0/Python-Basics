@@ -131,7 +131,7 @@ By working through this repository, you will:
 
 **Mufid Panhalkar**
 🎓 Computer Engineering Student
-🤖 AI/ML Enthusiast
+🤖 AI/ML Engineer
 
 ---
 
