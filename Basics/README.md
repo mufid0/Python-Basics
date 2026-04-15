@@ -1,5 +1,3 @@
----
-
 # 🐍 Python Fundamentals
 
 A well-structured collection of Python programs designed to build a solid foundation in core programming concepts. This repository focuses on fundamental topics such as variables, data types, control flow, and basic problem-solving techniques.
