@@ -1,5 +1,3 @@
-Here’s a **more professional, clean, industry-level README.md** for your GitHub repo 👇
-
 ---
 
 # 🐍 Python Fundamentals
