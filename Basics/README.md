@@ -117,13 +117,6 @@ By working through this repository, you will:
 
 ---
 
-## 👨‍💻 Author
-
-**Mufid Panhalkar**
-Computer Engineering Student | AI/ML Engineer
-
----
-
 ## ⭐ Support
 
 If you find this repository useful, consider giving it a star to support the project.
