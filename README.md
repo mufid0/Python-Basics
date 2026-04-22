@@ -334,11 +334,11 @@ jupyter notebook
 
 After completing this repository, you will:
 
-✔ Build strong Python fundamentals
-✔ Write clean and reusable functions
-✔ Understand OOP concepts deeply
-✔ Apply knowledge to real-world projects
-✔ Be prepared for coding interviews & AI/ML learning
+* ✔ Build strong Python fundamentals
+* ✔ Write clean and reusable functions
+* ✔ Understand OOP concepts deeply
+* ✔ Apply knowledge to real-world projects
+* ✔ Be prepared for coding interviews & AI/ML learning
 
 ---
 
