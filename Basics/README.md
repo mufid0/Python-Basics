@@ -120,5 +120,3 @@ By working through this repository, you will:
 ## ⭐ Support
 
 If you find this repository useful, consider giving it a star to support the project.
-
----
