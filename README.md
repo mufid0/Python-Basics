@@ -1,3 +1,5 @@
+---
+
 # 🐍 Python Fundamentals, Functional Programming & OOP
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?style=for-the-badge)
