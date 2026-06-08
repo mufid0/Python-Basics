@@ -1,4 +1,3 @@
----
 
 # 🐍 Python Fundamentals, Functional Programming & OOP
 
